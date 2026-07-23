@@ -1,0 +1,18 @@
+DIGITAL ECOSPHERE — COMPLETE SIMPLIFIED REPLACEMENT PACKAGE
+
+1. Extract this ZIP.
+2. Upload every file and folder INSIDE the extracted folder to the root of your GitHub repository.
+3. Allow GitHub to replace files with the same names. You do NOT need to delete the repository first.
+4. Do not upload the ZIP itself or the enclosing folder.
+5. In GitHub Pages use: Deploy from a branch → main → /(root).
+6. After deployment, open the site with Ctrl+Shift+R or in an incognito window.
+
+What was simplified:
+- Ten AliExpress curated storefronts now use one CSS file: shop-assets/css/aliexpress-curated.css
+- The same ten storefronts now use one JS file: shop-assets/js/aliexpress-curated.js
+- Temu Japan and TikTok Shop Japan now share: shop-assets/js/marketplace-browse.js
+- Old country filenames remain only as tiny compatibility aliases. This lets you upload over the current repository without deleting files first.
+- The six structurally different AliExpress storefronts continue using aliexpress-country.css and aliexpress-country.js.
+- The 17 files in shop-assets/i18n are intentionally separate language libraries, not duplicates.
+
+Keep .nojekyll and CNAME in the repository root.

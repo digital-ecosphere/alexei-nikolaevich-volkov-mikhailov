@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found | Digital Ecosphere</title>
+<link rel="stylesheet" href="style.css">
+<script>
+(() => {
+  const name = location.pathname.split('/').pop().toLowerCase();
+  const legacy = {
+    'amazon.html': 'amazon-jp.html',
+    'temu.html': 'temu-jp.html',
+    'shein.html': 'shein-jp.html',
+    'shien-jp.html': 'shein-jp.html',
+    'shen-jp.html': 'shein-jp.html',
+    'tiktokshop.html': 'tiktokshop-jp.html'
+  };
+  let target = legacy[name];
+  if (name === 'aliexpress.html') {
+    const market = new URLSearchParams(location.search).get('market') || 'jp';
+    const markets = {
+      jp:'aliexpress-jp.html', us:'aliexpress-us.html', fr:'aliexpress-france.html',
+      it:'aliexpress-italy.html', au:'aliexpress-australia.html', es:'aliexpress-spain.html',
+      br:'aliexpress-brazil.html', np:'aliexpress-nepal.html', de:'aliexpress-germany.html',
+      uk:'aliexpress-uk.html', gb:'aliexpress-uk.html', hk:'aliexpress-hong-kong.html',
+      kr:'aliexpress-south-korea.html', za:'aliexpress-south-africa.html',
+      mx:'aliexpress-mexico.html', ae:'aliexpress-uae.html', sa:'aliexpress-saudi-arabia.html'
+    };
+    target = markets[market.toLowerCase()] || markets.jp;
+  }
+  if (target) {
+    const url = new URL(target, location.origin + location.pathname.replace(/[^/]*$/, ''));
+    const lang = new URLSearchParams(location.search).get('lang');
+    if (lang) url.searchParams.set('lang', lang);
+    location.replace(url.href);
+  }
+})();
+</script>
+</head>
+<body>
+<main class="content-section">
+  <div class="container narrow-copy">
+    <p class="eyebrow">Digital Ecosphere</p>
+    <h1>Page not found</h1>
+    <p>The requested page is unavailable. Open the shop directory to choose an available storefront.</p>
+    <p><a class="button button-primary" href="shop.html">Open the shop directory</a></p>
+  </div>
+</main>
+</body>
+</html>

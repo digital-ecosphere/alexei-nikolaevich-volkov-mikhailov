@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script id="shop-language-bootstrap">(() => {
+  const lang = localStorage.getItem("de-smart-language") || "en";
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+})();</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Digital Ecosphere Shop: selected links to TikTok Shop, Temu, Amazon, AliExpress, and SHEIN, plus curated recommendations for science, AI, creator technology, books, fieldwork, style, and travel." name="description"/>
+<meta content="#0b2538" name="theme-color"/>
+<title>Shop | Digital Ecosphere</title>
+<link href="digital-ecosphere-logo.png" rel="icon" type="image/png"/>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="site.js"></script>
+<link href="shop-assets/css/shop-directory.css" rel="stylesheet"/>
+<style id="shop-standalone-layout-repair">
+:root{
+  --de-ink:#102f43;--de-muted:#556b78;--de-blue:#0d6680;--de-green:#23794c;
+  --de-bg:#f3f7f7;--de-card:#fff;--de-line:#d7e2e5;--de-shadow:0 12px 30px rgba(16,47,67,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--de-bg);color:var(--de-ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+img{max-width:100%;height:auto}
+a{color:inherit}
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{left:1rem;top:1rem;z-index:9999;background:#fff;padding:.7rem 1rem;border-radius:.5rem}
+.container{width:min(1160px,calc(100% - 32px));margin-inline:auto}
+
+/* Site header repair */
+.de-top-site-header{background:#fff;border-top:6px solid #202c32;border-bottom:1px solid var(--de-line)}
+.de-top-site-header-inner{width:min(1160px,calc(100% - 32px));margin:auto;padding:18px 0 12px}
+.de-top-brand-area{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.de-top-brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.de-top-brand img{width:84px;height:84px;object-fit:cover;border-radius:50%}
+.de-top-brand-copy{display:flex;flex-direction:column;line-height:1.2}
+.de-top-brand-title{font-size:1.55rem;font-weight:800}
+.de-top-brand-tagline{font-size:.92rem;color:var(--de-muted);letter-spacing:.03em}
+.de-top-site-tagline{margin:0;color:var(--de-muted);flex:1;min-width:260px}
+.de-top-nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.de-top-nav a{padding:.55rem .72rem;text-decoration:none;border-radius:.55rem;font-weight:650}
+.de-top-nav a:hover,.de-top-nav .active{background:#e8f3f4;color:#075b70}
+.de-top-shop-link{display:inline-flex;align-items:center;gap:.3rem}
+.de-top-support-link{background:#edf7ef}
+
+/* Language and delivery controls */
+.shop-directory-controls{background:#0b3447;color:#fff;position:relative;z-index:3}
+.shop-directory-controls-inner{width:min(1160px,calc(100% - 32px));margin:auto;padding:12px 0;display:flex;align-items:end;gap:16px;flex-wrap:wrap}
+.shop-directory-home{display:grid;place-items:center;width:44px;height:44px;text-decoration:none;background:rgba(255,255,255,.13);border-radius:.65rem;font-size:1.2rem}
+.shop-directory-control{display:grid;gap:4px;min-width:230px}
+.shop-directory-control label{font-size:.82rem;font-weight:700}
+.shop-directory-control select{width:100%;min-height:44px;padding:.55rem .75rem;border-radius:.55rem;border:1px solid rgba(255,255,255,.35);background:#fff;color:#173849;font-size:1rem}
+
+/* Hero and content */
+.page-hero{background:linear-gradient(135deg,#0b3447,#126c7b);color:#fff;padding:54px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.09em;font-size:.75rem;font-weight:800;margin:0 0 .45rem}
+.page-hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:.15rem 0 .8rem}
+.publication-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px}
+.publication-stats>div{background:rgba(255,255,255,.12);padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:.8rem}
+.publication-stats strong,.publication-stats span{display:block}
+.publication-stats strong{font-size:1.55rem}
+.content-section{padding:44px 0 64px}
+.shop-intro-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}
+.shop-intro-card,.shop-model-card,.publication-toolbar,.shop-disclosure,.shop-policy-section{background:var(--de-card);border:1px solid var(--de-line);border-radius:1rem;padding:24px;box-shadow:var(--de-shadow)}
+.shop-model-card{background:#eaf4ef}
+.shop-model-icon{font-size:1.8rem}
+.shop-toolbar{display:grid;grid-template-columns:1.3fr 1fr auto;gap:16px;align-items:end;margin:24px 0}
+.publication-search-wrap,.publication-filter-wrap{display:grid;gap:6px}
+.shop-toolbar label{font-weight:700}
+.shop-toolbar input,.shop-toolbar select{min-height:44px;width:100%;padding:.6rem .75rem;border:1px solid #b9cbd1;border-radius:.55rem;background:#fff;font-size:1rem}
+.publication-result-count{margin:0;white-space:nowrap}
+.shop-disclosure{margin:0 0 30px;background:#fff9e8}
+.shop-collection-section{margin-top:30px}
+.shop-section-spaced{margin-top:48px}
+.publication-section-heading{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}
+.publication-section-heading h2{margin:.1rem 0 0;font-size:clamp(1.5rem,3vw,2.15rem)}
+.publication-section-heading>span{color:var(--de-muted);max-width:480px}
+
+/* Responsive cards */
+.shop-category-grid,.shop-product-grid,.shop-originals-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.shop-brand-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.shop-category-tile,.shop-product-card,.shop-original-card,.shop-brand-card{background:#fff;border:1px solid var(--de-line);border-radius:.9rem;box-shadow:var(--de-shadow)}
+.shop-category-tile{display:block;padding:20px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.shop-category-tile:hover{transform:translateY(-2px)}
+.shop-category-tile h3{margin:.35rem 0}
+.shop-platform-number,.shop-category-tile>span:first-child,.shop-product-icon,.shop-original-card>span:first-child{font-weight:850;color:var(--de-blue)}
+.shop-market-label{display:inline-block!important;background:#edf6f8;padding:.15rem .5rem;border-radius:999px;font-size:.78rem}
+.shop-brand-card{overflow:hidden}
+.shop-brand-visual{min-height:120px;display:grid;place-items:center;background:#e8f1f3;font-size:2rem;font-weight:850}
+.shop-brand-visual small{display:block;font-size:.78rem}
+.shop-brand-body,.shop-product-card,.shop-original-card{padding:20px}
+.shop-tag-row{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}
+.shop-tag-row span{background:#eef3f4;border-radius:999px;padding:.18rem .55rem;font-size:.78rem}
+.button,.shop-link{display:inline-block;text-decoration:none;background:#0c647a;color:#fff;padding:.6rem .9rem;border-radius:.55rem;font-weight:750}
+.shop-pending-button{display:inline-block;padding:.45rem .7rem;border-radius:.5rem;background:#edf1f2;color:#51636c;font-size:.84rem}
+.site-footer{background:#102f43;color:#fff;padding:34px 0 18px}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:20px}
+.footer-brand{font-weight:800;font-size:1.25rem;text-decoration:none}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.2);margin-top:22px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.site-footer p{margin:.25rem 0}
+.visitor-counter-tracker{display:none}
+
+@media(max-width:900px){
+ .shop-category-grid,.shop-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .shop-intro-grid,.shop-toolbar{grid-template-columns:1fr}
+ .publication-result-count{white-space:normal}
+}
+@media(max-width:620px){
+ .de-top-brand-area{align-items:flex-start}
+ .de-top-brand img{width:68px;height:68px}
+ .de-top-site-tagline{min-width:100%}
+ .de-top-nav a{padding:.45rem .52rem;font-size:.92rem}
+ .shop-directory-control{min-width:100%}
+ .publication-stats,.shop-category-grid,.shop-product-grid,.shop-brand-grid,.shop-originals-grid{grid-template-columns:1fr}
+ .publication-section-heading,.footer-grid{display:block}
+ .publication-section-heading>span{display:block;margin-top:8px}
+}
+</style>
+<style id="shop-live-store-card-repair">
+.shop-live-store-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+.shop-live-store-grid .shop-platform-tile{
+  display:grid!important;
+  grid-template-columns:46px 46px minmax(0,1fr)!important;
+  grid-template-rows:auto!important;
+  align-items:start!important;
+  column-gap:14px!important;
+  min-width:0!important;
+  min-height:180px!important;
+  padding:20px!important;
+  overflow:hidden!important;
+  text-decoration:none!important;
+}
+.shop-live-store-grid .shop-platform-number{
+  grid-column:1!important;
+  width:46px!important;
+  height:46px!important;
+  display:grid!important;
+  place-items:center!important;
+  border-radius:50%!important;
+  background:#edf5f7!important;
+  font-weight:800!important;
+  line-height:1!important;
+}
+.shop-live-store-grid .shop-platform-icon{
+  grid-column:2!important;
+  display:block!important;
+  font-size:2rem!important;
+  line-height:1.2!important;
+  text-align:center!important;
+}
+.shop-live-store-grid .shop-platform-content{
+  grid-column:3!important;
+  display:block!important;
+  min-width:0!important;
+}
+.shop-live-store-grid h3{
+  display:block!important;
+  margin:0 0 8px!important;
+  padding:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:1.18rem!important;
+  line-height:1.25!important;
+  overflow-wrap:anywhere!important;
+}
+.shop-live-store-grid .shop-market-label{
+  display:inline-block!important;
+  margin:0 0 10px!important;
+  line-height:1.3!important;
+}
+.shop-live-store-grid p{
+  display:block!important;
+  margin:0!important;
+  font-size:.95rem!important;
+  line-height:1.55!important;
+  color:#526873!important;
+  overflow-wrap:anywhere!important;
+}
+.shop-platform-tile[hidden]{display:none!important}
+@media(max-width:980px){
+  .shop-live-store-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:640px){
+  .shop-live-store-grid{grid-template-columns:1fr!important}
+  .shop-live-store-grid .shop-platform-tile{
+    grid-template-columns:42px 42px minmax(0,1fr)!important;
+    column-gap:10px!important;
+    min-height:0!important;
+    padding:16px!important;
+  }
+}
+</style>
+<link href="https://digital-ecosphere.org/shop.html" rel="canonical"/><link href="https://digital-ecosphere.org/shop.html?lang=en" hreflang="en" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=hi" hreflang="hi" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=ne" hreflang="ne" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=ja" hreflang="ja" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=fr" hreflang="fr" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=de" hreflang="de" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=it" hreflang="it" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=es" hreflang="es" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=ru" hreflang="ru" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=ar" hreflang="ar" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=zh-CN" hreflang="zh-CN" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=ko" hreflang="ko" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=fil" hreflang="fil" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=id" hreflang="id" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=pt-BR" hreflang="pt-BR" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=zh-TW" hreflang="zh-TW" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html?lang=vi" hreflang="vi" rel="alternate"/><link href="https://digital-ecosphere.org/shop.html" hreflang="x-default" rel="alternate"/></head>
+<body data-shop-page="shop.html">
+<a class="skip-link" data-i18n="t0" href="#main-content">Skip to content</a>
+<header class="de-top-site-header">
+<div class="de-top-site-header-inner">
+<div class="de-top-brand-area">
+<a aria-label="Digital Ecosphere home" class="de-top-brand" href="index.html">
+<img alt="" decoding="async" src="digital-ecosphere-logo.png"/>
+<span class="de-top-brand-copy">
+<span class="de-top-brand-title" translate="no">Digital Ecosphere</span>
+<span class="de-top-brand-tagline" data-i18n="t1">Science · Technology · Society</span>
+</span>
+</a>
+<p class="de-top-site-tagline" data-i18n="t56">
+        Connecting nature, technology, and society through research and digital knowledge.
+      </p>
+</div>
+<nav aria-label="Primary navigation" class="de-top-nav">
+<a data-i18n="t2" href="index.html">Home</a>
+<a data-i18n="t3" href="about.html">About</a>
+<a data-i18n="t4" href="publications.html">Publications</a>
+<a data-i18n="t5" href="reviews.html">Peer Review</a>
+<a data-i18n="t6" href="editor.html">Editorial Roles</a>
+<a data-i18n="t7" href="photos.html">Gallery</a>
+<a data-i18n="t8" href="writings.html">Poetry</a>
+<a data-i18n="t9" href="social_media.html">Social Media</a>
+<a aria-current="page" class="de-top-shop-link active" href="shop.html">
+<span aria-hidden="true" class="de-top-shop-symbol">🏬</span>
+<span data-i18n="t10">Shop</span>
+</a>
+<a class="de-top-support-link" data-i18n="t11" href="support.html">Volunteer Support</a>
+</nav>
+</div>
+</header><section aria-label="Shop directory controls" class="shop-directory-controls">
+<div class="shop-directory-controls-inner">
+<a aria-label="Shop directory" class="shop-directory-home" href="shop.html" title="Shop directory">🏬</a>
+<div class="shop-directory-control">
+<label for="language-select">🌐 <span data-ui-key="choose_language">Choose language</span></label>
+<select aria-label="Choose language" data-i18n-aria-label="choose_language" id="language-select">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+<option value="ne">नेपाली</option>
+<option value="ja">日本語</option>
+<option value="fr">Français</option>
+<option value="de">Deutsch</option>
+<option value="it">Italiano</option>
+<option value="es">Español</option>
+<option value="ru">Русский</option>
+<option value="ar">العربية</option>
+<option value="zh-CN">简体中文</option>
+<option value="ko">한국어</option>
+<option value="fil">Filipino</option>
+<option value="id">Bahasa Indonesia</option>
+<option value="pt-BR">Português (Brasil)</option>
+<option value="zh-TW">繁體中文</option>
+<option value="vi">Tiếng Việt</option>
+</select>
+</div>
+<div class="shop-directory-control">
+<label for="shop-delivery-country">
+        🚚 <span data-ui-key="delivery_country">Delivery country</span>
+</label>
+<select aria-label="Delivery country" id="shop-delivery-country">
+<option data-ui-key="all_markets" value="all">🌐 All available markets</option>
+<option value="JP">🇯🇵 Japan</option>
+<option value="FR">🇫🇷 France</option>
+<option value="IT">🇮🇹 Italy</option>
+<option value="AU">🇦🇺 Australia</option>
+<option value="ES">🇪🇸 Spain</option>
+<option value="BR">🇧🇷 Brazil</option>
+<option value="NP">🇳🇵 Nepal</option>
+<option value="DE">🇩🇪 Germany</option>
+<option value="GB">🇬🇧 United Kingdom</option>
+<option value="US">🇺🇸 United States</option>
+<option value="HK">🇭🇰 Hong Kong</option>
+<option value="KR">🇰🇷 South Korea</option>
+<option value="ZA">🇿🇦 South Africa</option>
+<option value="MX">🇲🇽 Mexico</option>
+<option value="AE">🇦🇪 United Arab Emirates</option>
+<option value="SA">🇸🇦 Saudi Arabia</option>
+</select>
+</div></div>
+</section>
+<main id="main-content"><noscript><p class="shop-noscript-note">JavaScript is required for language switching, filtering and sorting. Essential marketplace links remain available.</p></noscript>
+<section class="page-hero shop-page-hero">
+<div class="container">
+<p class="eyebrow" data-ui-key="hero_eyebrow">Active partner shops · General audiences</p>
+<h1 data-ui-key="hero_title">Digital Ecosphere Shop</h1>
+<p data-ui-key="hero_text">Choose a delivery country to see the shopping pages currently available for that market.</p>
+</div>
+</section>
+<section class="content-section shop-content-section">
+<div class="container">
+<div class="shop-intro-grid">
+<article class="shop-intro-card">
+<p class="eyebrow" data-ui-key="intro_eyebrow">Available shopping pages</p>
+<h2 data-ui-key="intro_title">Choose by delivery country</h2>
+<p data-ui-key="intro_text">Select a country above. Only storefronts associated with delivery to that market will remain visible.</p>
+</article>
+<aside class="shop-model-card">
+<span aria-hidden="true" class="shop-model-icon">↗</span>
+<p class="gift-label" data-ui-key="purchase_eyebrow">How purchasing works</p>
+<h2 data-ui-key="purchase_title">Purchases are completed with the retailer</h2>
+<p data-ui-key="purchase_text">Prices, availability, delivery, returns and payments are managed by the linked retailer.</p>
+</aside>
+</div>
+<section aria-labelledby="partner-stores-title" class="shop-collection-section shop-section-spaced">
+<div class="publication-section-heading">
+<div>
+<p class="eyebrow" data-ui-key="stores_eyebrow">Selected shopping platforms</p>
+<h2 data-ui-key="stores_title" id="partner-stores-title">Choose a store</h2>
+</div>
+<span data-ui-key="stores_text">Each marketplace opens on its own mobile-friendly page.</span>
+</div>
+<div class="shop-category-grid shop-live-store-grid">
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="JP" href="tiktokshop-jp.html">
+<span class="shop-platform-number">01</span>
+<span aria-hidden="true" class="shop-platform-icon">🎵</span>
+<span class="shop-platform-content">
+<h3 data-store-name="1">TikTok Shop JP</h3>
+<span class="shop-market-label" data-market-code="JP">Japan</span>
+<p data-store-description="1">Open the official TikTok profile and current product showcases.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="JP" href="temu-jp.html">
+<span class="shop-platform-number">02</span>
+<span aria-hidden="true" class="shop-platform-icon">🛍️</span>
+<span class="shop-platform-content">
+<h3 data-store-name="2">Temu JP</h3>
+<span class="shop-market-label" data-market-code="JP">Japan</span>
+<p data-store-description="2">Browse current Temu offers, storefront links and campaign information.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="JP" href="shein-jp.html">
+<span class="shop-platform-number">03</span>
+<span aria-hidden="true" class="shop-platform-icon">✨</span>
+<span class="shop-platform-content">
+<h3 data-store-name="3">SHEIN JP</h3>
+<span class="shop-market-label" data-market-code="JP">Japan</span>
+<p data-store-description="3">Open the curated SHEIN collection, category links and app-search instructions.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="JP" href="aliexpress-jp.html">
+<span class="shop-platform-number">04</span>
+<span aria-hidden="true" class="shop-platform-icon">⚙️</span>
+<span class="shop-platform-content">
+<h3 data-store-name="4">AliExpress JP</h3>
+<span class="shop-market-label" data-market-code="JP">Japan</span>
+<p data-store-description="4">Browse curated products for delivery to Japan.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="JP" href="amazon-jp.html">
+<span class="shop-platform-number">05</span>
+<span aria-hidden="true" class="shop-platform-icon">📦</span>
+<span class="shop-platform-content">
+<h3 data-store-name="5">Amazon JP</h3>
+<span class="shop-market-label" data-market-code="JP">Japan</span>
+<p data-store-description="5">Browse curated Amazon Japan recommendations and services.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="US" href="aliexpress-us.html">
+<span class="shop-platform-number">06</span>
+<span aria-hidden="true" class="shop-platform-icon">🇺🇸</span>
+<span class="shop-platform-content">
+<h3 data-store-name="6">AliExpress US</h3>
+<span class="shop-market-label" data-market-code="US">United States</span>
+<p data-store-description="6">Browse curated products for shoppers in the United States.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="FR" href="aliexpress-france.html">
+<span class="shop-platform-number">07</span>
+<span aria-hidden="true" class="shop-platform-icon">🇫🇷</span>
+<span class="shop-platform-content">
+<h3 data-store-name="7">AliExpress France</h3>
+<span class="shop-market-label" data-market-code="FR">France</span>
+<p data-store-description="7">Browse curated products for shoppers in France.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="IT" href="aliexpress-italy.html">
+<span class="shop-platform-number">08</span>
+<span aria-hidden="true" class="shop-platform-icon">🇮🇹</span>
+<span class="shop-platform-content">
+<h3 data-store-name="8">AliExpress Italy</h3>
+<span class="shop-market-label" data-market-code="IT">Italy</span>
+<p data-store-description="8">Browse curated products for shoppers in Italy.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="AU" href="aliexpress-australia.html">
+<span class="shop-platform-number">09</span>
+<span aria-hidden="true" class="shop-platform-icon">🇦🇺</span>
+<span class="shop-platform-content">
+<h3 data-store-name="9">AliExpress Australia</h3>
+<span class="shop-market-label" data-market-code="AU">Australia</span>
+<p data-store-description="9">Browse curated products for shoppers in Australia.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="ES" href="aliexpress-spain.html">
+<span class="shop-platform-number">10</span>
+<span aria-hidden="true" class="shop-platform-icon">🇪🇸</span>
+<span class="shop-platform-content">
+<h3 data-store-name="10">AliExpress Spain</h3>
+<span class="shop-market-label" data-market-code="ES">Spain</span>
+<p data-store-description="10">Browse curated products for shoppers in Spain.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="BR" href="aliexpress-brazil.html">
+<span class="shop-platform-number">11</span>
+<span aria-hidden="true" class="shop-platform-icon">🇧🇷</span>
+<span class="shop-platform-content">
+<h3 data-store-name="11">AliExpress Brazil</h3>
+<span class="shop-market-label" data-market-code="BR">Brazil</span>
+<p data-store-description="11">Browse curated products for shoppers in Brazil.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="NP" href="aliexpress-nepal.html">
+<span class="shop-platform-number">12</span>
+<span aria-hidden="true" class="shop-platform-icon">🇳🇵</span>
+<span class="shop-platform-content">
+<h3 data-store-name="12">AliExpress Nepal</h3>
+<span class="shop-market-label" data-market-code="NP">Nepal</span>
+<p data-store-description="12">Browse curated products for shoppers in Nepal.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="DE" href="aliexpress-germany.html">
+<span class="shop-platform-number">13</span>
+<span aria-hidden="true" class="shop-platform-icon">🇩🇪</span>
+<span class="shop-platform-content">
+<h3 data-store-name="13">AliExpress Germany</h3>
+<span class="shop-market-label" data-market-code="DE">Germany</span>
+<p data-store-description="13">Browse curated products for shoppers in Germany.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="GB" href="aliexpress-uk.html">
+<span class="shop-platform-number">14</span>
+<span aria-hidden="true" class="shop-platform-icon">🇬🇧</span>
+<span class="shop-platform-content">
+<h3 data-store-name="14">AliExpress United Kingdom</h3>
+<span class="shop-market-label" data-market-code="GB">United Kingdom</span>
+<p data-store-description="14">Browse curated products for shoppers in the United Kingdom.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="HK" href="aliexpress-hong-kong.html">
+<span class="shop-platform-number">15</span>
+<span aria-hidden="true" class="shop-platform-icon">🇭🇰</span>
+<span class="shop-platform-content">
+<h3 data-store-name="15">AliExpress Hong Kong</h3>
+<span class="shop-market-label" data-market-code="HK">Hong Kong</span>
+<p data-store-description="15">Browse curated products for shoppers in Hong Kong.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="KR" href="aliexpress-south-korea.html">
+<span class="shop-platform-number">16</span>
+<span aria-hidden="true" class="shop-platform-icon">🇰🇷</span>
+<span class="shop-platform-content">
+<h3 data-store-name="16">AliExpress South Korea</h3>
+<span class="shop-market-label" data-market-code="KR">South Korea</span>
+<p data-store-description="16">Browse curated products for shoppers in South Korea.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="ZA" href="aliexpress-south-africa.html">
+<span class="shop-platform-number">17</span>
+<span aria-hidden="true" class="shop-platform-icon">🇿🇦</span>
+<span class="shop-platform-content">
+<h3 data-store-name="17">AliExpress South Africa</h3>
+<span class="shop-market-label" data-market-code="ZA">South Africa</span>
+<p data-store-description="17">Browse curated products for shoppers in South Africa.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="MX" href="aliexpress-mexico.html">
+<span class="shop-platform-number">18</span>
+<span aria-hidden="true" class="shop-platform-icon">🇲🇽</span>
+<span class="shop-platform-content">
+<h3 data-store-name="18">AliExpress Mexico</h3>
+<span class="shop-market-label" data-market-code="MX">Mexico</span>
+<p data-store-description="18">Browse curated products for shoppers in Mexico.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="AE" href="aliexpress-uae.html">
+<span class="shop-platform-number">19</span>
+<span aria-hidden="true" class="shop-platform-icon">🇦🇪</span>
+<span class="shop-platform-content">
+<h3 data-store-name="19">AliExpress UAE</h3>
+<span class="shop-market-label" data-market-code="AE">United Arab Emirates</span>
+<p data-store-description="19">Browse curated products for shoppers in the United Arab Emirates.</p>
+</span>
+</a>
+<a class="shop-category-tile shop-platform-tile" data-delivery-country="SA" href="aliexpress-saudi-arabia.html">
+<span class="shop-platform-number">20</span>
+<span aria-hidden="true" class="shop-platform-icon">🇸🇦</span>
+<span class="shop-platform-content">
+<h3 data-store-name="20">AliExpress Saudi Arabia</h3>
+<span class="shop-market-label" data-market-code="SA">Saudi Arabia</span>
+<p data-store-description="20">Browse curated products for shoppers in Saudi Arabia.</p>
+</span>
+</a>
+</div>
+</section>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a class="footer-brand" href="index.html">Digital Ecosphere</a>
+<p data-i18n="t56">Connecting nature, technology, and society through research and digital knowledge.</p>
+</div>
+<div class="footer-links">
+<a data-i18n="t3" href="about.html">About</a>
+<a data-i18n="t4" href="publications.html">Publications</a>
+<a data-i18n="t5" href="reviews.html">Peer Review</a>
+<a data-i18n="t6" href="editor.html">Editorial Roles</a>
+<a data-i18n="t7" href="photos.html">Gallery</a>
+<a data-i18n="t8" href="writings.html">Poetry</a>
+<a data-i18n="t9" href="social_media.html">Social Media</a>
+</div>
+</div>
+<div class="container footer-bottom footer-contact-block">
+<div>
+<p><strong>Dr. Ram C. Sharma (BSc, MS, DSc)</strong></p>
+<p data-i18n="t57">Greater Tokyo Area, Japan</p>
+<p>Email: <a href="mailto:ramc-sharma@digital-ecosphere.org">ramc-sharma@digital-ecosphere.org</a></p>
+</div>
+<p>© 2025 Dr. Ram C. Sharma</p>
+<p class="de-policy-links"><a data-smart-i18n="privacy_policy" href="privacy.html">Privacy Policy</a> · <a data-smart-i18n="affiliate_policy" href="affiliate-disclosure.html">Affiliate Disclosure</a> · <a data-smart-i18n="terms_use" href="terms.html">Terms of Use</a> · <a data-smart-i18n="contact_policy" href="contact.html">Contact</a></p></div>
+</footer>
+<div aria-hidden="true" class="visitor-counter-tracker">
+<img alt="" data-visitor-counter="" decoding="async" loading="lazy" referrerpolicy="no-referrer"/>
+</div>
+
+<script defer src="shop-assets/js/shop-directory.js"></script></body>
+</html>

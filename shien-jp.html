@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex,follow" name="robots"/>
+<title>Redirecting to SHEIN JP</title>
+<script>
+(function(){
+  var target=new URL("shein-jp.html",location.href);
+  var lang=new URL(location.href).searchParams.get("lang");
+  if(lang) target.searchParams.set("lang",lang);
+  location.replace(target.href);
+})();
+</script>
+<noscript><meta content="0;url=shein-jp.html" http-equiv="refresh"/></noscript>
+</head>
+<body><p><a href="shein-jp.html">Continue to SHEIN JP</a></p></body>
+</html>
