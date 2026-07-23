@@ -1,0 +1,103 @@
+/* Digital Ecosphere modular shop system */
+.global-language-panel,
+.global-language-row,
+.language-switcher,
+.language-switch-wrap,
+.language-toggle,
+.lang,
+#google_translate_element {
+  display: none !important;
+}
+.de-shop-controls {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  width: 100% !important;
+  background: #0b2538 !important;
+  color: #fff !important;
+  border-bottom: 1px solid rgba(255,255,255,.16) !important;
+  box-shadow: 0 5px 16px rgba(0,0,0,.16) !important;
+}
+.de-shop-controls-inner {
+  width: min(1180px, calc(100% - 24px)) !important;
+  margin: 0 auto !important;
+  padding: .62rem 0 !important;
+  display: grid !important;
+  grid-template-columns: auto minmax(160px,.85fr) minmax(190px,1fr) minmax(170px,.9fr) !important;
+  gap: .65rem !important;
+  align-items: end !important;
+}
+.de-shop-home {
+  width: 46px !important;
+  min-height: 46px !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 1px solid rgba(255,255,255,.28) !important;
+  border-radius: 12px !important;
+  background: #123a50 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 1.35rem !important;
+}
+.de-control-group {
+  display: grid !important;
+  gap: .22rem !important;
+  min-width: 0 !important;
+}
+.de-control-group label {
+  color: #d5e6eb !important;
+  font-size: .72rem !important;
+  font-weight: 850 !important;
+  letter-spacing: .045em !important;
+}
+.de-control-group select,
+.de-market-badge {
+  width: 100% !important;
+  min-height: 46px !important;
+  padding: .58rem .75rem !important;
+  border: 1px solid rgba(255,255,255,.28) !important;
+  border-radius: 12px !important;
+  background: #123a50 !important;
+  color: #fff !important;
+  font: inherit !important;
+  font-weight: 750 !important;
+}
+.de-market-badge {
+  display: flex !important;
+  align-items: center !important;
+}
+html[dir="rtl"] body { text-align: right; }
+html[dir="rtl"] .de-shop-controls-inner,
+html[dir="rtl"] .de-market-badge { direction: rtl; }
+html[dir="rtl"] input,
+html[dir="rtl"] select { text-align: right; }
+
+@media (max-width: 760px) {
+  .de-shop-controls-inner {
+    grid-template-columns: 46px minmax(0,1fr) !important;
+  }
+  .de-shop-home {
+    grid-row: 1 / span 3 !important;
+    align-self: stretch !important;
+    height: auto !important;
+  }
+  .de-control-group { grid-column: 2 !important; }
+}
+[id] { scroll-margin-top: 8rem; }
+.shop-noscript-note {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 1rem auto;
+  padding: .85rem 1rem;
+  border: 1px solid rgba(11,37,56,.18);
+  border-radius: 12px;
+  background: #fff8df;
+  color: #233744;
+}
+button, select, input, .button, .shop-category-tile {
+  touch-action: manipulation;
+}
+@media (max-width: 640px) {
+  button, select, .button, .shop-category-tile {
+    min-height: 44px;
+  }
+}

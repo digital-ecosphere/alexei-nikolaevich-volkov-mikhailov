@@ -1,0 +1,12 @@
+.de-storefront-controls{background:#0b3447;color:#fff;position:relative;z-index:9999;box-shadow:0 8px 24px rgba(4,25,36,.14)}
+.de-storefront-controls *{box-sizing:border-box}
+.de-storefront-controls__inner{width:min(1180px,calc(100% - 28px));margin:auto;padding:12px 0;display:grid;grid-template-columns:52px repeat(3,minmax(190px,1fr));gap:14px;align-items:end}
+.de-storefront-controls__home{width:46px;height:46px;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);color:#fff;text-decoration:none;font-size:1.25rem;transition:background .2s ease,transform .2s ease}
+.de-storefront-controls__home:hover,.de-storefront-controls__home:focus-visible{background:rgba(255,255,255,.24);transform:translateY(-1px)}
+.de-storefront-control{display:grid;gap:5px;min-width:0}
+.de-storefront-control label{font:700 .82rem/1.25 Arial,Helvetica,sans-serif;color:#fff;margin:0}
+.de-storefront-control select{display:block;width:100%;height:46px;margin:0;padding:0 38px 0 12px;border:1px solid rgba(255,255,255,.4);border-radius:9px;background:#fff;color:#173849;font:500 1rem/1.2 Arial,Helvetica,sans-serif;cursor:pointer}
+html[dir="rtl"] .de-storefront-control select{padding:0 12px 0 38px}
+.de-storefront-control select:focus-visible,.de-storefront-controls__home:focus-visible{outline:3px solid #ffd166;outline-offset:2px}
+@media(max-width:880px){.de-storefront-controls__inner{grid-template-columns:46px 1fr 1fr}.de-storefront-control--language{grid-column:2/4}}
+@media(max-width:620px){.de-storefront-controls__inner{grid-template-columns:1fr}.de-storefront-controls__home{width:100%}.de-storefront-control--language{grid-column:auto}}
